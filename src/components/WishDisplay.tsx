@@ -96,7 +96,7 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
               <div className="aspect-[16/9] overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/60 via-transparent to-transparent z-10" />
                 <ImageWithFallback
-                  src={`https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=300&fit=crop&crop=face&q=80&auto=format`}
+                  src={friend.avatar}
                   alt={`${friend.name}`}
                   className="w-full h-full object-cover"
                 />
@@ -143,15 +143,6 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
                 >
                   <MessageCircle className="h-4 w-4 text-violet-500" />
                   Say Thanks!
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={handleShare}
-                  className="flex-1 gap-2 bg-white/80 hover:bg-white border-violet-200 hover:border-violet-300"
-                >
-                  <Share2 className="h-4 w-4 text-blue-500" />
-                  Share
                 </Button>
               </motion.div>
 

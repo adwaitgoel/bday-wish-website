@@ -138,7 +138,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
                   <div className="relative h-full overflow-hidden">
                     {/* Removed the purple tint overlay div */}
                     <ImageWithFallback
-                      src={`https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face&q=80&auto=format`}
+                      src={currentFriend.avatar}
                       alt={`${currentFriend.name}`}
                       className="w-full h-full object-cover transition-opacity duration-300"
                     />

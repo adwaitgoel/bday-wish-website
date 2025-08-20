@@ -171,21 +171,6 @@ export function Gallery() {
                 </motion.div>
               ))}
             </div>
-
-            {/* Load More Button */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2 }}
-              className="text-center mt-8"
-            >
-              <Button
-                variant="outline"
-                className="bg-white/80 hover:bg-white border-2 border-violet-200 hover:border-violet-300 px-6 py-2"
-              >
-                View More Memories 📷
-              </Button>
-            </motion.div>
           </motion.div>
 
           {/* Floating Decorations */}
@@ -221,7 +206,7 @@ export function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center"
             onClick={handlePhotoViewerBackdrop}
           >
             {/* Close Button */}
@@ -229,37 +214,37 @@ export function Gallery() {
               variant="outline"
               size="icon"
               onClick={closePhotoViewer}
-              className="absolute top-4 right-4 z-60 bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
+              className="absolute top-4 right-4 z-[70] bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
             >
               <X className="h-4 w-4" />
             </Button>
 
-            {/* Navigation Buttons */}
+            {/* Navigation Buttons - Enhanced for mobile */}
             <Button
               variant="outline"
               size="icon"
               onClick={prevPhoto}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-60 bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-[70] bg-white/95 hover:bg-white shadow-lg border-2 border-violet-200 w-12 h-12 md:w-10 md:h-10"
             >
-              <ChevronLeft className="h-4 w-4" />
+              <ChevronLeft className="h-5 w-5 md:h-4 md:w-4" />
             </Button>
 
             <Button
               variant="outline"
               size="icon"
               onClick={nextPhoto}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-60 bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-[70] bg-white/95 hover:bg-white shadow-lg border-2 border-violet-200 w-12 h-12 md:w-10 md:h-10"
             >
-              <ChevronRight className="h-4 w-4" />
+              <ChevronRight className="h-5 w-5 md:h-4 md:w-4" />
             </Button>
 
-            {/* Photo Container */}
+            {/* Photo Container - Fixed sizing */}
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="relative max-w-4xl max-h-[80vh] w-full h-full flex items-center justify-center"
+              className="relative w-full h-full flex items-center justify-center p-4 pb-20"
             >
               <div className="relative max-w-full max-h-full">
                 <ImageWithFallback
@@ -268,22 +253,7 @@ export function Gallery() {
                   className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
                 />
                 
-                {/* Photo Info */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-sm rounded-lg p-4"
-                >
-                  <h3 className="text-white font-bold text-lg mb-1">
-                    {galleryData.photos[selectedPhotoIndex].title}
-                  </h3>
-                  <p className="text-white/80 text-sm">
-                    Photo {selectedPhotoIndex + 1} of {galleryData.photos.length}
-                  </p>
-                </motion.div>
-
-                {/* Floating Hearts */}
+                {/* Floating Hearts - Kept */}
                 {[...Array(2)].map((_, i) => (
                   <motion.div
                     key={i}
@@ -308,13 +278,26 @@ export function Gallery() {
                 ))}
               </div>
             </motion.div>
-
-            {/* Photo Counter */}
+            {/* Photo Info - Now positioned absolutely at bottom */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm rounded-lg p-4 z-[60]"
+            >
+              <h3 className="text-white font-bold text-lg mb-1">
+                {galleryData.photos[selectedPhotoIndex].title}
+              </h3>
+              <p className="text-white/80 text-sm">
+                Photo {selectedPhotoIndex + 1} of {galleryData.photos.length}
+              </p>
+            </motion.div>
+            {/* Photo Counter - Moved up to avoid overlap */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg"
+              className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg z-[60]"
             >
               <span className="text-sm font-medium text-gray-800">
                 {selectedPhotoIndex + 1} / {galleryData.photos.length}

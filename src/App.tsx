@@ -43,8 +43,8 @@ const friendsData = [
   { id: 25, name: "Lisa", group: "Work Chums", avatar: "young professional", wish: "Happy birthday! Our lunch conversations always brighten my day. Hope yours is filled with joy! 🥳", contact: { type: "email" as const, value: "lisa@company.com" } },
   
   // Study Buddies (5 people)
-  { id: 26, name: "Emma", group: "Study Buddies", avatar: "college student woman", wish: "Happy birthday bestie! College wouldn't have been the same without you. Here's to our lifelong friendship! 🥳", contact: { type: "whatsapp" as const, value: "+919876543221" } },
-  { id: 27, name: "Jake", group: "Study Buddies", avatar: "college student man", wish: "Happy birthday! Those late-night study sessions and pizza runs were legendary. Hope your day is as awesome as you are! 🍕", contact: { type: "email" as const, value: "jake@college.edu" } },
+  { id: 26, name: "Emma", group: "Study Buddies", avatar: "/sample_image_wisher1.png", wish: "Happy birthday bestie! College wouldn't have been the same without you. Here's to our lifelong friendship! 🥳", contact: { type: "whatsapp" as const, value: "+919876543221" } },
+  { id: 27, name: "Jake", group: "Study Buddies", avatar: "/sample_image_wisher1.png", wish: "Happy birthday! Those late-night study sessions and pizza runs were legendary. Hope your day is as awesome as you are! 🍕", contact: { type: "email" as const, value: "jake@college.edu" } },
   { id: 28, name: "Mia", group: "Study Buddies", avatar: "student with glasses", wish: "Happy birthday gorgeous! From dorm room dance parties to graduation - what a journey! Love you tons! 💃", contact: { type: "whatsapp" as const, value: "+919876543222" } },
   { id: 29, name: "Alex", group: "Study Buddies", avatar: "young man casual", wish: "Happy birthday! Thanks for being such an amazing friend through all the ups and downs of college life! 🎓", contact: { type: "email" as const, value: "alex@college.edu" } },
   { id: 30, name: "Lily", group: "Study Buddies", avatar: "cheerful woman", wish: "Happy birthday sweetie! Our friendship means the world to me. Can't wait to catch up soon! 💫", contact: { type: "whatsapp" as const, value: "+919876543223" } }
@@ -112,7 +112,7 @@ export default function App() {
         className="text-center py-12 px-4"
       >
         <p className="text-sm text-muted-foreground">
-          Made with 💖 for the most amazing birthday girl
+          Made with 💖 for the most amazing 
         </p>
       </motion.div>
     </div>
