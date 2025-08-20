@@ -92,24 +92,24 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-end md:items-center justify-center p-4"
+      className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
       onClick={handleBackdropClick}
     >
       <motion.div
-        initial={{ y: "100%", opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: "100%", opacity: 0 }}
+        initial={{ y: "20px", opacity: 0, scale: 0.95 }}
+        animate={{ y: 0, opacity: 1, scale: 1 }}
+        exit={{ y: "20px", opacity: 0, scale: 0.95 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         onClick={(e: React.MouseEvent) => e.stopPropagation()}
-        className="w-full max-w-2xl max-h-[90vh] flex flex-col"
+        className="w-full max-w-2xl max-h-[85vh] my-auto"
       >
-        <Card className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-violet-50 border-2 border-violet-200 shadow-2xl flex flex-col h-full">
+        <Card className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-violet-50 border-2 border-violet-200 shadow-2xl flex flex-col h-full glass-effect card-glow">
           {/* Close Button */}
           <Button
             variant="ghost"
             size="icon"
             onClick={handleCloseClick}
-            className="absolute top-2 right-2 z-30 bg-white/90 hover:bg-white shadow-lg border border-violet-200 hover:border-violet-300"
+            className="absolute top-2 right-2 z-30 bg-white/90 hover:bg-white shadow-lg border border-violet-200 hover:border-violet-300 transition-colors duration-200"
           >
             <X className="h-4 w-4 text-gray-600" />
           </Button>
@@ -131,7 +131,7 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
               
               {/* Friend info overlay */}
               <div className="absolute bottom-4 left-4 right-4 z-20">
-                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-1">{friend.name}</h3>
+                <h3 className="text-2xl font-bold text-white drop-shadow-lg mb-1 section-heading">{friend.name}</h3>
                 <div className="flex items-center gap-2">
                   <div className="inline-block bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-lg text-sm font-medium">
                     {friend.group}
@@ -146,7 +146,7 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
           </motion.div>
 
           {/* Scrollable Content */}
-          <div className="flex-1 overflow-y-auto">
+          <div className="flex-1 overflow-y-auto min-h-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -168,7 +168,7 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
                         transition={{ delay: 0.3 + (index * 0.1) }}
                         className="group"
                       >
-                        <Card className="bg-white/70 backdrop-blur-sm border border-violet-100 hover:border-violet-200 transition-all duration-300 hover:shadow-md">
+                        <Card className="bg-white/70 backdrop-blur-sm border border-violet-100 hover:border-violet-200 transition-all duration-300 hover:shadow-md glass-effect birthday-card-hover magic-hover">
                           <CardContent className="p-4">
                             {/* Question Header */}
                             <div className="flex items-start gap-3 mb-3">
@@ -181,7 +181,7 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
                               <div className="flex-1">
                                 <h4 className={`
                                   font-semibold text-sm mb-2 bg-gradient-to-r ${question.color} 
-                                  bg-clip-text text-transparent leading-relaxed
+                                  bg-clip-text text-transparent leading-relaxed section-heading
                                 `}>
                                   {question.title}
                                 </h4>
@@ -218,14 +218,14 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex-shrink-0 p-6 pt-0"
+            className="flex-shrink-0 p-6 pt-0 bg-white/80"
           >
             <div className="flex gap-3">
               <Button
                 variant="outline"
                 size="sm"
                 onClick={handleSayThanks}
-                className="flex-1 gap-2 bg-white/80 hover:bg-white border-violet-200 hover:border-violet-300"
+                className="flex-1 gap-2 bg-white/80 hover:bg-white border-violet-200 hover:border-violet-300 transition-colors duration-200"
               >
                 <MessageCircle className="h-4 w-4 text-violet-500" />
                 Say Thanks!
@@ -239,7 +239,7 @@ export function WishDisplay({ friend, isVisible, onClose }: WishDisplayProps) {
           </motion.div>
 
           {/* Decorative Elements */}
-          <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-violet-200/50 to-transparent pointer-events-none" 
+          <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-violet-200/30 to-transparent pointer-events-none" 
                style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 50%)' }} />
           
           {/* Floating Elements */}

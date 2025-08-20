@@ -10,42 +10,42 @@ const galleryData = {
   photos: [
     {
       id: 'photo-1',
-      src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Beautiful Moment 1'
     },
     {
       id: 'photo-2', 
-      src: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Birthday Celebration'
     },
     {
       id: 'photo-3',
-      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Sweet Memories'
     },
     {
       id: 'photo-4',
-      src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Happy Times'
     },
     {
       id: 'photo-5',
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Joyful Celebration'
     },
     {
       id: 'photo-6',
-      src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Precious Moments'
     },
     {
       id: 'photo-7',
-      src: 'https://images.unsplash.com/photo-1551301425-68e4e0d6d4a6?w=800&h=800&fit=crop',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Cherished Memory'
     },
     {
       id: 'photo-8',
-      src: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&h=800&fit=crop&q=80',
+      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Beautiful Day'
     }
   ]
@@ -115,7 +115,7 @@ export function Gallery() {
             >
               📸
             </motion.div>
-            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 bg-clip-text text-transparent mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 bg-clip-text text-transparent mb-2 gradient-text section-heading celebration-text">
               Memory Lane
             </h2>
             <p className="text-muted-foreground mb-6">
@@ -142,7 +142,7 @@ export function Gallery() {
                   className="group cursor-pointer"
                   onClick={() => handlePhotoClick(index)}
                 >
-                  <Card className="overflow-hidden bg-gradient-to-br from-white to-violet-50 border border-violet-200 shadow-md hover:shadow-lg transition-all duration-300">
+                  <Card className="overflow-hidden bg-gradient-to-br from-white to-violet-50 border border-violet-200 shadow-md hover:shadow-lg transition-all duration-300 glass-effect birthday-card-hover magic-hover">
                     <CardContent className="p-0">
                       <div className="relative aspect-square overflow-hidden">
                         <ImageWithFallback
@@ -199,111 +199,62 @@ export function Gallery() {
         </div>
       </motion.div>
 
-      {/* Photo Viewer Modal */}
+      {/* Photo Viewer Modal - ULTRA SIMPLE */}
       <AnimatePresence>
         {showPhotoViewer && selectedPhotoIndex !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center"
-            onClick={handlePhotoViewerBackdrop}
-          >
-            {/* Close Button */}
-            <Button
-              variant="outline"
-              size="icon"
+          <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+            {/* Close Button - Fixed at top */}
+            <button
               onClick={closePhotoViewer}
-              className="absolute top-4 right-4 z-[70] bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
+              className="fixed top-6 right-6 z-[100] bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-colors duration-200"
             >
-              <X className="h-4 w-4" />
-            </Button>
+              <X className="h-6 w-6 text-gray-800" />
+            </button>
 
-            {/* Navigation Buttons - Enhanced for mobile */}
-            <Button
-              variant="outline"
-              size="icon"
+            {/* Navigation Buttons - Fixed positioning */}
+            <button
               onClick={prevPhoto}
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-[70] bg-white/95 hover:bg-white shadow-lg border-2 border-violet-200 w-12 h-12 md:w-10 md:h-10"
+              className="fixed left-6 top-1/2 -translate-y-1/2 z-[100] bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-colors duration-200"
             >
-              <ChevronLeft className="h-5 w-5 md:h-4 md:w-4" />
-            </Button>
+              <ChevronLeft className="h-6 w-6 text-gray-800" />
+            </button>
 
-            <Button
-              variant="outline"
-              size="icon"
+            <button
               onClick={nextPhoto}
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-[70] bg-white/95 hover:bg-white shadow-lg border-2 border-violet-200 w-12 h-12 md:w-10 md:h-10"
+              className="fixed right-6 top-1/2 -translate-y-1/2 z-[100] bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-colors duration-200"
             >
-              <ChevronRight className="h-5 w-5 md:h-4 md:w-4" />
-            </Button>
+              <ChevronRight className="h-6 w-6 text-gray-800" />
+            </button>
 
-            {/* Photo Container - Fixed sizing */}
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="relative w-full h-full flex items-center justify-center p-4 pb-20"
-            >
-              <div className="relative max-w-full max-h-full">
-                <ImageWithFallback
-                  src={galleryData.photos[selectedPhotoIndex].src}
-                  alt={galleryData.photos[selectedPhotoIndex].title}
-                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-                />
-                
-                {/* Floating Hearts - Kept */}
-                {[...Array(2)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    animate={{ 
-                      y: [0, -15, 0],
-                      opacity: [0.3, 0.8, 0.3],
-                      scale: [0.8, 1, 0.8]
-                    }}
-                    transition={{ 
-                      duration: 3 + i * 0.5,
-                      repeat: Infinity,
-                      delay: i * 1
-                    }}
-                    className="absolute text-pink-400 text-lg pointer-events-none"
-                    style={{
-                      top: `${10 + i * 20}%`,
-                      right: `${5 + i * 10}%`
-                    }}
-                  >
-                    💖
-                  </motion.div>
-                ))}
+            {/* Click to close backdrop */}
+            <div 
+              className="absolute inset-0 cursor-pointer"
+              onClick={closePhotoViewer}
+            />
+
+            {/* Content */}
+            <div className="relative z-[90] max-w-4xl max-h-[80vh] w-full h-full flex flex-col items-center justify-center">
+              {/* Image */}
+              <motion.img
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.8, opacity: 0 }}
+                src={galleryData.photos[selectedPhotoIndex].src}
+                alt={galleryData.photos[selectedPhotoIndex].title}
+                className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-2xl mb-4"
+              />
+
+              {/* Photo Info */}
+              <div className="bg-black/70 backdrop-blur-sm rounded-lg p-4 text-center">
+                <h3 className="text-white font-bold text-lg mb-1">
+                  {galleryData.photos[selectedPhotoIndex].title}
+                </h3>
+                <p className="text-white/80 text-sm">
+                  Photo {selectedPhotoIndex + 1} of {galleryData.photos.length}
+                </p>
               </div>
-            </motion.div>
-            {/* Photo Info - Now positioned absolutely at bottom */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm rounded-lg p-4 z-[60]"
-            >
-              <h3 className="text-white font-bold text-lg mb-1">
-                {galleryData.photos[selectedPhotoIndex].title}
-              </h3>
-              <p className="text-white/80 text-sm">
-                Photo {selectedPhotoIndex + 1} of {galleryData.photos.length}
-              </p>
-            </motion.div>
-            {/* Photo Counter - Moved up to avoid overlap */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="absolute bottom-20 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg z-[60]"
-            >
-              <span className="text-sm font-medium text-gray-800">
-                {selectedPhotoIndex + 1} / {galleryData.photos.length}
-              </span>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         )}
       </AnimatePresence>
     </>

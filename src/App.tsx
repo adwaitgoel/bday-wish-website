@@ -531,11 +531,11 @@ const friendsData = [
 ];
 
 const groupColors = {
-  "Fam Jam": "bg-gradient-to-br from-violet-50 to-violet-100 border-violet-200",
-  "Langotiyas": "bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200", 
-  "Nathkhat Neighborhood": "bg-gradient-to-br from-indigo-50 to-indigo-100 border-indigo-200",
-  "Work Chums": "bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200",
-  "Study Buddies": "bg-gradient-to-br from-sky-50 to-sky-100 border-sky-200"
+  "Fam Jam": "bg-gradient-to-br from-rose-50 via-pink-50 to-violet-100 border-rose-200/60 shadow-rose-100/50",
+  "Langotiyas": "bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 border-sky-200/60 shadow-sky-100/50", 
+  "Nathkhat Neighborhood": "bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100 border-emerald-200/60 shadow-emerald-100/50",
+  "Work Chums": "bg-gradient-to-br from-amber-50 via-orange-50 to-red-100 border-amber-200/60 shadow-amber-100/50",
+  "Study Buddies": "bg-gradient-to-br from-purple-50 via-violet-50 to-fuchsia-100 border-purple-200/60 shadow-purple-100/50"
 };
 
 export default function App() {
@@ -548,19 +548,62 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-violet-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-violet-50 to-purple-50 birthday-gradient floating-particles">
       {/* Header */}
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center py-8 px-4"
+        className="text-center py-12 px-4 relative"
       >
-        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-purple-500 bg-clip-text text-transparent mb-2">
-          🎉 Happy Birthday! 🎉
-        </h1>
-        <p className="text-muted-foreground">
-          30 special people sent you birthday wishes!
-        </p>
+        {/* Floating birthday elements */}
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            animate={{ 
+              y: [0, -20, 0],
+              rotate: [0, 360],
+              opacity: [0.4, 0.8, 0.4]
+            }}
+            transition={{ 
+              duration: 4 + i * 0.5,
+              repeat: Infinity,
+              delay: i * 0.8
+            }}
+            className="absolute text-2xl pointer-events-none"
+            style={{
+              top: `${20 + (i * 10)}%`,
+              left: `${10 + (i * 15)}%`
+            }}
+          >
+            {['🎈', '🎉', '✨', '🎂', '🌟', '💫'][i]}
+          </motion.div>
+        ))}
+        
+        <motion.h1 
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1 }}
+          transition={{ type: "spring", stiffness: 200, delay: 0.2 }}
+          className="text-4xl md:text-6xl font-bold gradient-text birthday-title celebration-text mb-4 relative"
+        >
+           ✨ Happy Birthday! ✨
+          
+          {/* Subtle glow effect */}
+          <div className="absolute inset-0 blur-2xl bg-gradient-to-r from-pink-500/20 via-violet-500/20 to-blue-500/20 -z-10" />
+        </motion.h1>
+        
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="text-lg text-muted-foreground subtitle-elegant"
+        >
+          <span className="relative z-10">The special ones sent you birthday wishes!</span>
+          <motion.span
+            animate={{ width: ["0%", "100%"] }}
+            transition={{ duration: 2, delay: 0.8 }}
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gradient-to-r from-violet-500 to-pink-500"
+          />
+        </motion.p>
       </motion.div>
 
       {/* Central Avatar */}

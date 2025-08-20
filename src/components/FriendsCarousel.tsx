@@ -91,7 +91,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
             variant="outline"
             size="icon"
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/95 hover:bg-white shadow-lg border-2 border-violet-200 hover:border-violet-300 transition-colors duration-200"
           >
             <ChevronLeft className="h-4 w-4" />
           </Button>
@@ -100,7 +100,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
             variant="outline"
             size="icon"
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white shadow-lg border-2 border-violet-200"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/95 hover:bg-white shadow-lg border-2 border-violet-200 hover:border-violet-300 transition-colors duration-200"
           >
             <ChevronRight className="h-4 w-4" />
           </Button>
@@ -130,8 +130,9 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
                 h-full mx-8 md:mx-12 
                 ${groupColors[currentFriend.group]} 
                 border-2 shadow-xl hover:shadow-2xl 
-                transition-all duration-300 overflow-hidden
+                transition-all duration-500 overflow-hidden
                 group hover:scale-[1.02]
+                glass-effect card-glow birthday-card-hover magic-hover
               `}>
                 <CardContent className="p-0 h-full relative">
                   {/* Friend Image - Removed hover zoom and tint overlay */}
@@ -170,7 +171,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg text-center mb-2"
+                        className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg text-center mb-2 section-heading celebration-text"
                       >
                         {currentFriend.name}
                       </motion.h3>
@@ -279,10 +280,10 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
                   setCurrentIndex(firstFriendIndex);
                 }}
                 className={`
-                  px-3 py-1 rounded-full text-xs transition-all duration-300
+                  px-3 py-1 rounded-full text-xs transition-all duration-300 magic-hover
                   ${currentFriend.group === group 
-                    ? 'bg-violet-500 text-white shadow-md' 
-                    : 'bg-white/80 text-gray-600 hover:bg-violet-100'
+                    ? 'birthday-button text-white shadow-md pulse-glow' 
+                    : 'bg-white/80 text-gray-600 hover:bg-violet-100 birthday-card-hover'
                   }
                 `}
               >
