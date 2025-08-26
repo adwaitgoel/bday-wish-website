@@ -24,7 +24,7 @@ export function CentralAvatar() {
         >
           {/* Avatar Image - No overlays or veils */}
           <ImageWithFallback
-            src="https://png.pngtree.com/png-clipart/20250216/original/pngtree-stunning-3d-toy-soldier-with-detailed-craftsmanship-png-image_19242771.png"
+            src="/sanjana-hero-section-image.png"
             alt="Birthday Girl"
             className="w-full h-full object-contain"
           />
@@ -124,7 +124,7 @@ export function CentralAvatar() {
             key={i}
             animate={{ 
               scale: [0, 1, 0],
-              opacity: [0, 0.6, 0],
+              opacity: [0, 0.1, 0],
               rotate: [0, 180, 360]
             }}
             transition={{ 
@@ -133,7 +133,7 @@ export function CentralAvatar() {
               delay: i * 2,
               ease: "easeInOut"
             }}
-            className="absolute w-2 h-2 bg-violet-300 z-10"
+            className="absolute w-2 h-2 bg-white z-10"
             style={{
               top: `${25 + (i * 35)}%`,
               right: `${15 + (i * 25)}%`,

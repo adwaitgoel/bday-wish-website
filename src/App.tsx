@@ -12,10 +12,10 @@ const friendsData = [
   // Fam Jam (3 people)
   { 
     id: 1, 
-    name: "Mom", 
+    name: "Jaden", 
     group: "Fam Jam", 
-    avatar: "woman portrait", 
-    wish: "Happy birthday my sweetest daughter! You bring so much joy to our family. May this year be filled with endless happiness and beautiful memories! 🎂💕",
+    avatar: "man portrait", 
+    wish: "Happy birthday!",
     responses: {
       importantMoment: "The day you were born, of course! But truly, it was watching you help that lost child find their parents at the mall when you were just 8. That's when I knew you had the kindest heart.",
       personalityEmojis: "🌟💕🤗🎨✨",
@@ -27,165 +27,131 @@ const friendsData = [
     },
     contact: { type: "whatsapp" as const, value: "+919876543210" } 
   },
-  { 
-    id: 2, 
-    name: "Dad", 
-    group: "Fam Jam", 
-    avatar: "man portrait", 
-    wish: "To my amazing daughter, happy birthday! I'm so proud of the wonderful person you've become. Here's to another year of adventures! 🎉",
-    responses: {
-      importantMoment: "When you graduated college and I saw you walk across that stage. All those years of hard work, and there you were - my little girl who had become this incredible woman.",
-      personalityEmojis: "💪🎯📚💡🌈",
-      hiddenTrait: "You have this incredible ability to solve problems that others can't even see. You're like a quiet superhero, always finding ways to make things better.",
-      warningLabel: "Caution: May challenge you to be your best self, will remember every important detail about your life, and gives the world's best bear hugs.",
-      neverChange: "Your determination and the way you never give up on people you care about. You're my hero in so many ways.",
-      futureAdvice: "Take calculated risks, princess. Some of my best decisions seemed scary at first. Trust your intelligence - it's one of your greatest gifts.",
-      birthdayWish: "I hope this year brings you adventures that challenge you and achievements that make you proud. You deserve every wonderful thing life has to offer! 🚀"
-    },
-    contact: { type: "email" as const, value: "dad@family.com" } 
-  },
-  { 
-    id: 3, 
-    name: "Sarah (Sister)", 
-    group: "Fam Jam", 
-    avatar: "young woman", 
-    wish: "Happy birthday to the best sister ever! Thanks for always being there for me. Can't wait to celebrate with you! 🎈",
-    responses: {
-      importantMoment: "When I was crying about my first heartbreak and you dropped everything to come over with ice cream and terrible movies. That's when I knew you weren't just my sister - you were my best friend.",
-      personalityEmojis: "🤪🎭💃🍕🦄",
-      hiddenTrait: "You're way funnier than you think you are! Your random observations about life crack me up, but you never realize when you're being hilarious.",
-      warningLabel: "Warning: May cause uncontrollable laughter, sudden cravings for adventures, and an overwhelming urge to be a better person.",
-      neverChange: "The way you can make any situation better just by being you. Even our worst days become funny stories when you're around.",
-      futureAdvice: "Stop overthinking everything! You're amazing just as you are. Also, please keep being weird - the world needs more people like you.",
-      birthdayWish: "I hope this year is filled with all the random adventures your heart desires and that you finally realize how awesome you are! Love you, sis! 🎂💕"
-    },
-    contact: { type: "whatsapp" as const, value: "+919876543211" } 
-  },
   
   // Langotiyas (3 people)
   { 
+    id: 2, 
+    name: "Hri", 
+    group: "Langotiyas", 
+    avatar: "/hritika-wishcard.jpeg", 
+    wish: "Happy birthday!",
+    responses: {
+      importantMoment: "One of my core memories with Sanju takes me back to our graduation days when I first met her through Isha. From the very beginning, there was something about her nature that felt so familiar, almost like a reflection of myself. During lectures, instead of paying attention, we would get completely lost in watching cooking videos together. Break times became our ritual: sharing one fried rice and half dry Manchurian, laughing endlessly over the smallest things. Somewhere between those stolen laughs, shared meals, and hours spent side by side, I realized how naturally she had become such an important part of my life. It wasn’t one big moment but a thousand little ones—the ease of our bond, the way our similarities made us instant best friends, and how being with her always felt like being at home. That’s when I knew Sanju wasn’t just a friend from college—she was someone I was meant to hold onto for life.",
+      personalityEmojis: "😎😼🧚🏻🌼🍟🥺",
+      hiddenTrait: " Something about her that she probably doesn’t even realize about herself is how deeply she feels everything and everyone—she gets emotionally attached in ways that show her heart is bigger than she knows. She can play the role of a mom, scolding you when needed, yet also be the most practical advisor with sarcasm dripping through every word. That mix of softness and strength is what makes her so rare",
+      warningLabel: "Warning: Once Sanju’s in your life, her caring heart, emotional depth, and badass carefree spirit won’t ever let you go.",
+      neverChange: " she is truly sarvagun sampann—perfect in every way, just as she is. I wouldn’t want a single thing to be different, especially our friendship, which I hope stays exactly the same forever. 💖",
+      futureAdvice: "Stay kind, strong, and unstoppable, Always share your triple chicken schezwan fried rice with me—non-negotiable!!!",
+      birthdayWish: "My wish for her birthday and beyond is that she always stays as caring, giving, and beautifully herself as she is today. I hope she continues to chase her dreams fearlessly, laugh without limits, love deeply, and find happiness in even the smallest moments. May she always know her worth, never lose her carefree  spirit, and be surrounded by people who love her just the way she deserves."
+    },
+    contact: { type: "whatsapp" as const, value: "+918424005804" } 
+  },
+  { 
+    id: 3, 
+    name: "Isha", 
+    group: "Langotiyas", 
+    avatar: "/isha-wishcard.jpeg", 
+    wish: "Happy birthday!",
+    responses: {
+      importantMoment: "When you started sending images of the dishes you cooked during UG years and started talking all things food, I knew it then this is going to go a long long way🫶🏻",
+      personalityEmojis: "🍗🌮🌭🌯🥐🍕🥖🥗🍜🍟🍤🍥🥯🏋️‍♀️🥰🥰",
+      hiddenTrait: "Ywhen someone is craving some delish food they can turn to you for reccos, when they are sad they can turn to you to be consoled, when they want a hug they can run to you, when they want to get someone beaten up you are a call away, so to be precise you are an all in one package ",
+      warningLabel: "GUNDI HAI BEWARE",
+      neverChange: "“Isha shatap” “Isha yaar” basically i hope i can always irritate you easily",
+      futureAdvice: "you will manifest everything you desire so relax and eat some chimken",
+      birthdayWish: "Stay happy and hyper because that gives me some entertainment🤡"
+    },
+    contact: { type: "whatsapp" as const, value: "+918976340033" } 
+  },
+  { 
     id: 4, 
-    name: "Priya", 
+    name: "Prarthana", 
     group: "Langotiyas", 
-    avatar: "childhood friend", 
-    wish: "Happy birthday to my oldest friend! From playground adventures to now - our friendship has stood the test of time! 🌟",
+    avatar: "/prarthana-wishcard.jpeg", 
+    wish: "Happy birthday!",
     responses: {
-      importantMoment: "Remember when we got lost trying to find that 'secret garden' behind the school? You kept me calm and made it into an adventure. That's when I knew we'd be friends forever.",
-      personalityEmojis: "🌻🦋📖🎪🌙",
-      hiddenTrait: "You have this magical way of making ordinary moments feel special. You don't even realize you do it, but you turn everyday life into little celebrations.",
-      warningLabel: "Caution: May spontaneously burst into childhood memories, will always remember your favorite things, and gives the most thoughtful gifts.",
-      neverChange: "Your sense of wonder and the way you find magic in the smallest things. You still look at the world like we did when we were seven.",
-      futureAdvice: "Keep that beautiful imagination of yours alive! The world tries to make us too serious, but your creativity is your superpower.",
-      birthdayWish: "I hope this year brings you as many beautiful surprises as you've brought into my life over all these years. Here's to many more adventures, bestie! 🌟✨"
+      importantMoment: "I think one of the best moments which we had together during our “Bachpan” days was the Slap videos which we made in Bldg 1 Lobby !! Wish I could upload that video here😂 Also the dances we did together during Ganpati. Core memories 🫶🏻 ",
+      personalityEmojis: "💖🎀👩‍🍳💥🥹",
+      hiddenTrait: "She honestly has everything you’d admire in a perfect lady—super smart, absolutely gorgeous, emotionally tuned in, and sharp as a knife. She cooks so well, dances with such grace, and somehow balances confidence with the sweetest kind of compassion and humility. You are whole Vibe 💥",
+      warningLabel: "Explosive Charm Alert ‼️ ",
+      neverChange: "Hope you never change the intensity with which you do things, love that quality of yours!",
+      futureAdvice: "Hope your vision board comes to life and whatever you have manifested for your future becomes into reality super soon ✨",
+      birthdayWish: "Happy Birthday Sanjana 🫶🏻 25 looks fabulous on you! Keep shining and Slaying! "
     },
-    contact: { type: "whatsapp" as const, value: "+919876543212" } 
-  },
-  { 
-    id: 5, 
-    name: "Arjun", 
-    group: "Langotiyas", 
-    avatar: "school friend", 
-    wish: "Happy birthday! Remember when we used to trade lunch snacks? Those were the days! Hope you have the best day ever! 🍎",
-    responses: {
-      importantMoment: "The day you stood up to that bully who was picking on me in 5th grade. You were half his size but you had twice the courage. That's my friend right there!",
-      personalityEmojis: "🦸‍♀️🎮🍟😎🚀",
-      hiddenTrait: "You're incredibly brave, but you think you're just being normal. You've always been the one to speak up when something isn't right.",
-      warningLabel: "Alert: May challenge you to video game competitions, will always share food, and has an endless supply of random facts.",
-      neverChange: "Your loyalty and the way you always have your friends' backs. Plus, you still have the best snacks - some things never change!",
-      futureAdvice: "Keep being the person who stands up for what's right. The world needs more people like you who aren't afraid to do the right thing.",
-      birthdayWish: "Hope your birthday is as epic as those legendary lunch trades we used to do! May this year level up everything in your life! 🎮🎂"
-    },
-    contact: { type: "email" as const, value: "arjun@email.com" } 
-  },
-  { 
-    id: 6, 
-    name: "Kavya", 
-    group: "Langotiyas", 
-    avatar: "young girl friend", 
-    wish: "Happy birthday BFF! From sleepovers to secret diaries - we've shared it all! Love you forever! 💕",
-    responses: {
-      importantMoment: "During that sleepover when we were 12 and I told you my biggest secret. You didn't judge, you just hugged me and said 'so what, you're still my best friend.' That's true friendship.",
-      personalityEmojis: "💖🦄🌸📱✨",
-      hiddenTrait: "You're the most loyal person I know, but you don't realize how rare that is. You love people with your whole heart, and that's beautiful.",
-      warningLabel: "Warning: Will remember every inside joke from childhood, may cause nostalgic crying sessions, and always has the best gossip.",
-      neverChange: "The way you love people completely and fiercely. You make everyone feel like they're your most important person.",
-      futureAdvice: "Never let anyone dim your sparkle! You were born to shine bright, and anyone who doesn't see that doesn't deserve you.",
-      birthdayWish: "I hope this year is filled with as much magic as those sleepovers where we planned our whole futures! Dream big, beautiful! 💖✨"
-    },
-    contact: { type: "whatsapp" as const, value: "+919876543213" } 
+    contact: { type: "whatsapp" as const, value: "+919920055537" } 
   },
   
   // Nathkhat Neighborhood (11 people)
   { 
-    id: 7, 
-    name: "Mrs. Sharma", 
+    id: 5, 
+    name: "Archieee", 
     group: "Nathkhat Neighborhood", 
-    avatar: "neighbor woman", 
-    wish: "Happy birthday dear! I've watched you grow up into such a wonderful young woman. The neighborhood is lucky to have you! 🏠",
+    avatar: "/archie-wishcard.jpeg", 
+    wish: "Happy birthday!",
     responses: {
-      importantMoment: "When you were 15 and you organized that fundraiser for my husband's medical bills. You went door to door, so determined to help. That's when I knew what a special soul you are.",
-      personalityEmojis: "🌺👵💕🏡🌞",
-      hiddenTrait: "You have an old soul's wisdom but a young heart's enthusiasm. You see solutions where others see problems.",
-      warningLabel: "Caution: Will bring unexpected gifts, may offer unsolicited but excellent life advice, and gives the warmest hugs on the block.",
-      neverChange: "Your respectful nature and the way you treat everyone with dignity, regardless of their age or status. You were raised so well.",
-      futureAdvice: "Always remember where you came from, beta. Your roots keep you grounded while your dreams help you soar.",
-      birthdayWish: "May you always find your way back home, no matter how far life takes you. This neighborhood will always be proud of you! 🏠💕"
+      importantMoment: "Sanjana was never Sanjana to me she was always my chiichii. To manny memories and laughter together. More like an elder sister and cricket buddies forever. There was never a particular moment when I realised that she is an important person in my life, I just knew that no matter what I’ll always have my chichi since childhood. ",
+      personalityEmojis: "🤓🍗🍔🍕🥟❤️😂",
+      hiddenTrait: "sab pata hai chichi ko kuch realize kar ne ki zarurat nahi hai🤣🤭",
+      warningLabel: "Bas aab bhaiyaa ko Paris se wapis aane do sab bata dungi apni masti 😁😁",
+      neverChange: "I hope that you never change you laugher and mast mast hugs when you see me 😋",
+      futureAdvice: "shaadi karo yarr basss or kuch nahi cahiyeh  🙏🏻🙏🏻 mujhe bhi future sangeet practice ki tension hai 😭😭",
+      birthdayWish: "Happiest Birthday Chiichii ❤️ Love you sab se zada and ek chummi bhi meri taraf se, keep smiling and have a wonderful year ahead. You will always have me no matter what. ❤️🎁🎈💋🥳🎊"
     },
-    contact: { type: "email" as const, value: "sharma@neighborhood.com" } 
+    contact: { type: "email" as const, value: "graciassanjana@gmail.com" } 
+  },
+  { 
+    id: 6, 
+    name: "Preeti", 
+    group: "Nathkhat Neighborhood", 
+    avatar: "neighbor gal", 
+    wish: "Happy birthday",
+    responses: {
+      importantMoment: "When I met Sanjana for the first time it took sometime to get comfortable and get to know her, then vibe match hogayi and since then we have been hi-5ing and laughing around:) can’t wait to jog together too hopefully soon enough",
+      personalityEmojis: "✨🤓😂🦋🤪",
+      hiddenTrait: "You’re very fun to be with at all times for two reasons- (1) whoever you are with you are very genuine, open(happy to explain more irl) (2)you treat each and everyone w care",
+      warningLabel: "Error 404 sometimes; to funny to be with you might end up getting a good friend ",
+      neverChange: "The way she never stops laughing and making everyone laugh too",
+      futureAdvice: "Stay the same:) and take less stress",
+      birthdayWish: "Wishing you a very happy birthday and I hope you have a great day- today, tomorrow and always:)) oh and thank you for caring about the little things I care about too like a lip gloss🤪"
+    },
+    contact: {  type: "email" as const, value: "graciassanjana@gmail.com"} 
+  },
+  { 
+    id: 7, 
+    name: "Ashish", 
+    group: "Nathkhat Neighborhood", 
+    avatar: "Ranveer's Papa", 
+    wish: "Happy birthday",
+    responses: {
+      importantMoment: "She’s really fond of my son Ranveer and the moment she saw her for the first time she started crying and couldn’t stop it. I cant forget that moment. Lovely she is ❤️",
+      personalityEmojis: "😂🤗😎🫶🏻❤️",
+      hiddenTrait: "Still a kid at heart.",
+      warningLabel: "Level 25 reached- response only after 8hrs of sleep.",
+      neverChange: "Her energy and kid at heart ",
+      futureAdvice: "Always stay joyful as you are right now.",
+      birthdayWish: "May god give you all the happiness, health and success in the world ❤️"
+    },
+    contact: { type: "whatsapp" as const, value: "+918108781616" } 
   },
   { 
     id: 8, 
-    name: "Rohit Uncle", 
+    name: "Adway", 
     group: "Nathkhat Neighborhood", 
-    avatar: "neighbor guy", 
-    wish: "Happy birthday beta! Thanks for always being so kind and bringing such positive energy to our street! 🌻",
+    avatar: "/adway-wishcard.jpg", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When you helped me fix my car that day and refused to take any money. You said 'neighbors help neighbors, Uncle.' That's the India I grew up in.",
-      personalityEmojis: "🔧😊🌻🚗💪",
-      hiddenTrait: "You have natural leadership qualities but you're too humble to see it. People naturally look to you when they need help or guidance.",
-      warningLabel: "Alert: May fix things you didn't know were broken, will always wave when passing by, and remembers everyone's birthdays.",
-      neverChange: "Your helpful nature and the respect you show to elders. You make us all believe in the goodness of the younger generation.",
-      futureAdvice: "Keep your hands busy and your heart open, beta. There's no problem that can't be solved with patience and hard work.",
-      birthdayWish: "May your life run as smoothly as a well-tuned engine, and may you always find people willing to help you as you help others! 🚗🎂"
+      importantMoment: "When bhaiya introduced me to her",
+      personalityEmojis: "🍟😇🥹😹🤭",
+      hiddenTrait: "Being in their own world and not letting others ruin it",
+      warningLabel: "Maaru kya",
+      neverChange: "Her kindness",
+      futureAdvice: "To accept Snowy is actually Sheru 😈",
+      birthdayWish: "Happy 25, you're getting OLD day by day so enjoy to the fullest "
     },
-    contact: { type: "whatsapp" as const, value: "+919876543214" } 
+    contact: { type: "whatsapp" as const, value: "+919137944854" } 
   },
   { 
     id: 9, 
-    name: "Meera Aunty", 
-    group: "Nathkhat Neighborhood", 
-    avatar: "latina woman", 
-    wish: "Happy birthday bachcha! You're such a sweet girl. May your birthday be filled with love and laughter! 🎉",
-    responses: {
-      importantMoment: "When you complimented my cooking at the building society function and asked for the recipe. Most young people just politely eat, but you genuinely appreciated it.",
-      personalityEmojis: "🍛💕😋🏡👩‍🍳",
-      hiddenTrait: "You have a gift for making people feel valued and appreciated. You see the effort people put in, even when others don't notice.",
-      warningLabel: "Warning: Will feed you until you burst, may share family recipes, and always asks about your family with genuine interest.",
-      neverChange: "Your appreciation for home-cooked food and traditional values. You bridge the gap between generations beautifully.",
-      futureAdvice: "Remember to slow down and enjoy life's simple pleasures - a good meal, good company, and good conversation.",
-      birthdayWish: "May your life be as rich and flavorful as the best home-cooked meal, filled with love and shared with people who matter! 🍛💕"
-    },
-    contact: { type: "email" as const, value: "meera@email.com" } 
-  },
-  { 
-    id: 10, 
-    name: "Grandfather Ji", 
-    group: "Nathkhat Neighborhood", 
-    avatar: "elderly neighbor", 
-    wish: "Happy birthday young lady! Your smile always brightens my day when I see you around the neighborhood! 😊",
-    responses: {
-      importantMoment: "Every morning when you smile and say 'Good morning, Grandpa Ji' during my walk. In a world where people barely acknowledge each other, you always see me.",
-      personalityEmojis: "🌅😊🚶‍♂️💫🙏",
-      hiddenTrait: "You have the rare gift of making people feel seen and valued. You don't realize how much your simple greetings mean to people like me.",
-      warningLabel: "Notice: Will share stories from 'back in my day,' may offer life wisdom during casual conversations, and believes in the power of small kindnesses.",
-      neverChange: "Your respect for elders and the genuine warmth in your smile. You represent hope for humanity's future.",
-      futureAdvice: "Life is long, beta. Be patient with yourself and others. The best things come to those who treat people with kindness.",
-      birthdayWish: "May you live a life so full of joy that your smile never fades, and may you always find reasons to greet each new day with hope! 🌅💫"
-    },
-    contact: { type: "email" as const, value: "grandpa@family.com" } 
-  },
-  { 
-    id: 11, 
     name: "Ananya", 
     group: "Nathkhat Neighborhood", 
     avatar: "neighbor teen", 
@@ -202,7 +168,7 @@ const friendsData = [
     contact: { type: "whatsapp" as const, value: "+919876543215" } 
   },
   { 
-    id: 12, 
+    id: 10, 
     name: "The Guptas", 
     group: "Nathkhat Neighborhood", 
     avatar: "family portrait", 
@@ -219,7 +185,7 @@ const friendsData = [
     contact: { type: "email" as const, value: "guptas@family.com" } 
   },
   { 
-    id: 13, 
+    id: 11, 
     name: "Sunita Aunty", 
     group: "Nathkhat Neighborhood", 
     avatar: "middle aged woman", 
@@ -236,7 +202,7 @@ const friendsData = [
     contact: { type: "whatsapp" as const, value: "+919876543216" } 
   },
   { 
-    id: 14, 
+    id: 12, 
     name: "Vikram Bhaiya", 
     group: "Nathkhat Neighborhood", 
     avatar: "hispanic man", 
@@ -253,7 +219,7 @@ const friendsData = [
     contact: { type: "email" as const, value: "vikram@email.com" } 
   },
   { 
-    id: 15, 
+    id: 13, 
     name: "Pooja (Dog Walker)", 
     group: "Nathkhat Neighborhood", 
     avatar: "woman with dog", 
@@ -270,7 +236,7 @@ const friendsData = [
     contact: { type: "whatsapp" as const, value: "+919876543217" } 
   },
   { 
-    id: 16, 
+    id: 14, 
     name: "Ravi Chacha", 
     group: "Nathkhat Neighborhood", 
     avatar: "elderly man", 
@@ -287,7 +253,7 @@ const friendsData = [
     contact: { type: "email" as const, value: "ravi@email.com" } 
   },
   { 
-    id: 17, 
+    id: 15, 
     name: "Neha", 
     group: "Nathkhat Neighborhood", 
     avatar: "young neighbor", 
@@ -307,88 +273,88 @@ const friendsData = [
   // Work Chums (8 people)
   { 
     id: 18, 
-    name: "Rebecca (Boss)", 
+    name: "Shrruti", 
     group: "Work Chums", 
-    avatar: "professional woman", 
-    wish: "Happy birthday! You're such a valuable team member. Hope you take some time to celebrate yourself today! 💼",
+    avatar: "/shrruti-wishcard.jpeg", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "During that challenging project last quarter when you stepped up and took on extra responsibilities without being asked. That's when I knew you were leadership material.",
-      personalityEmojis: "💼🎯⚡🌟💡",
-      hiddenTrait: "You underestimate your leadership potential. Others naturally turn to you for guidance, but you don't see it yet.",
-      warningLabel: "Professional Notice: May exceed expectations regularly, will volunteer for challenging projects, and raises the bar for everyone around her.",
-      neverChange: "Your work ethic and the way you support your teammates. You make everyone around you better at their jobs.",
-      futureAdvice: "Start thinking about where you want to be in 5 years. You have the potential to go far - start planning your path upward.",
-      birthdayWish: "I hope this year brings you the recognition and opportunities you deserve. Your career trajectory is exciting to watch! 🚀💼"
+      importantMoment: "The moment I truly felt that she was going to be a very important person in my life was when I realized how she was there for me through literally everything — from drafting emails, to helping me pick jewellery at the shop, to teaming up with me at work. I still remember how she motivated me during one of the toughest phases of my life just a few months ago. The way she randomly surprises me with thoughtful gifts, the way she always puts her heart into everything — it all speaks volumes about the kind of person she is. One beautiful memory I’ll never forget is she saw me crying at the washroom and I told her please leave me alone for sometime, I went down for lunch and I come to my desk to receive my favourite red velvet cake…This gesture itself speaks volumes… That day I realised she is gonna be in my heart forever. I’ve never met someone as thoughtful as her in my life. I love you, Gundi. And please, never stop bringing in that tapori slang. Yours truly, Chota Don / Chikini / and every other funny name you’ve ever given me 😂",
+      personalityEmojis: "😎🫶🧚🏻‍♀️🌻🌍⭐️",
+      hiddenTrait: "She doesn’t even realize sometimes how much she has taught me. Even in the most random conversations, the moment she starts speaking, I end up learning something new — something that stays with me. Be it about haircare, skincare, workouts, music, outfits, or so much more, she has this effortless way of passing on little gems of wisdom without even trying. I truly wish the child in you always stays alive… and that you keep pampering me even more. ❤️",
+      warningLabel: "1)Highly addictive personality. May cause excessive laughter, pampering, and lifelong attachment. 2) Tapori slang enthusiast. Exposure may cause permanent slang adoption.",
+      neverChange: "I hope the child in you always stays alive. May you always remain as grounded as you are today, spreading love and joy wherever you go. And most importantly… never stop loving me. ❤️",
+      futureAdvice: "Never lose your kindness, but don’t forget to protect your own heart too.",
+      birthdayWish: "Happy 25th, my Gundi ❤️ May this year bring you endless happiness, success, and love. I hope you always stay as thoughtful, kind, and full of life as you are today. Keep chasing your dreams, pampering me 😜, and never let go of that childlike spark that makes you so unique. Here’s to the most beautiful chapter of your life yet. I love you the most🌍"
     },
-    contact: { type: "email" as const, value: "rebecca@company.com" } 
+    contact: { type: "whatsapp" as const, value: "+919653214412" } 
   },
   { 
     id: 19, 
-    name: "David", 
+    name: "Shourya", 
     group: "Work Chums", 
     avatar: "coworker man", 
-    wish: "Happy birthday colleague! Thanks for making work fun and always being so helpful. Enjoy your special day! 🎂",
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When I was new and overwhelmed, and you offered to help me learn the systems. You made my first months so much easier.",
-      personalityEmojis: "😄🤝💻🎯☕",
-      hiddenTrait: "You're the glue that holds our team together. You don't realize how much smoother everything runs because of your collaborative spirit.",
-      warningLabel: "Workplace Alert: May make Monday mornings bearable, will share coffee and office snacks, and somehow makes spreadsheets seem less terrible.",
-      neverChange: "Your willingness to help new people and your positive attitude that makes even stressful days manageable.",
-      futureAdvice: "Keep building those relationships! Your people skills are just as valuable as your technical skills - maybe more so.",
-      birthdayWish: "Hope your birthday is as awesome as those coffee break conversations that get us through the workweek! 🎂☕"
+      importantMoment: "Obviously it all Started coz of Suminter where each of my friends told me that be with Sanju she’s the most amazing person u ll meet… and yes suminter made me realise that how fun,jhalli,caring and adorable person you are",
+      personalityEmojis: "🐣🧿💪🥺💀",
+      hiddenTrait: "You have the potential to make everyone happy unknowingly….people around you genuinely loves you coz of ur kindness.",
+      warningLabel: "Brooo your instant expressions which u don’t realise but people understand what u wanna convey 😂(Have observed alot of this with ur Manager)",
+      neverChange: "Your love and care towards the people you genuinely adore.",
+      futureAdvice: "Pursue what ur heart says don’t try to keep everyone happy.",
+      birthdayWish: "Wishing you the best of 25th Birthday my cutieee hope you you achieve everything you have prayed and wished for and wanna see you get married soon with lots of kids 🤭. Be the same you are Sanju u are a gem of person 😘♥️"
     },
-    contact: { type: "email" as const, value: "david@company.com" } 
+    contact: { type: "whatsapp" as const, value: "+917887496220" } 
   },
   { 
     id: 20, 
-    name: "Sneha", 
+    name: "Saptak", 
     group: "Work Chums", 
-    avatar: "indian woman professional", 
-    wish: "Happy birthday! Your creativity and positive energy make our workplace so much better. Have an amazing day! 🌟",
+    avatar: "/saptak-wishcard.jpg", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When you presented that creative solution to the client problem that had stumped all of us. Your innovative thinking saved the day!",
-      personalityEmojis: "🎨💡✨🌈🚀",
-      hiddenTrait: "You don't realize how much your creative energy inspires the rest of us to think outside the box. You make work feel less like work.",
-      warningLabel: "Creative Alert: May come up with brilliant ideas at random moments, will add color to boring presentations, and makes brainstorming sessions actually fun.",
-      neverChange: "Your creative perspective and the way you approach problems from angles no one else considers. Innovation needs people like you.",
-      futureAdvice: "Don't let corporate life dim your creativity! The business world needs more people who think like artists.",
-      birthdayWish: "May this year bring you projects that let your creativity shine and recognition for the innovative thinker you are! 🎨🌟"
+      importantMoment: "This was the moment I realized you were going to be an important person and a life long friend in my life ❣️ - the day you surprised me with that cute little bat signed by Virat Kohli! 🏏 I still don’t know how you figured out I’m such a crazy RCB + Virat fan, but that gift is still in my showcase right beside my trophies and medals. That’s when I knew you’re someone who notices the little things and makes them extra special. And of course, how can I forget all the masti, the random trips, Bhandardara, and Garbett Plateau. Too many memories, too much fun. I hope you will plan the trek again 🔜 🚶‍♂️⛰️. Wishing you the happiest birthday Sanju 🎂🥂🥳 let’s keep making more crazy, unforgettable moments together! And yaa, keep up with your minning 😜. It suits you 'Miss Perfectionist'.",
+      personalityEmojis: "✨😇🎁😂🌍🎶💃⛰️💖         ✨ – lights up every room with positivity  😇 – kind and caring  🎁 – thoughtful, always surprises people with meaningful gestures  😂 – fun-loving, full of laughter  🌍 – loves exploring, travel, and new experiences  🎶 – enjoys vibes, music, and masti  💃 – lively and energetic  ⛰️ – adventure/trek lover  💖 – big-hearted and genuine",
+      hiddenTrait: "Something about you that you probably don’t even realize about yourself is how effortlessly you make people feel seen, cared for, and special. It’s in the little things you do - like remembering likes and dislikes, planning surprises, or bringing laughter that leave a lasting mark on everyone around you.",
+      warningLabel: "💥 Explosive Combo!Sweet as sugar, sharp as chili.",
+      neverChange: "I hope never changes about you is your crazy combo of sweet + savage - because only you can yell at someone and still make them feel special at the same time 😅💖.",
+      futureAdvice: "Stay the same crazy, adventurous, sweet-savage person you are, but also keep surprising yourself the way you surprise others - because you deserve just as much joy.",
+      birthdayWish: "My wish for her birthday and beyond is unlimited good food, crazy recipes to try, and zero calories to worry about."
     },
-    contact: { type: "whatsapp" as const, value: "+919876543219" } 
+    contact: { type: "whatsapp" as const, value: "+919726101900" } 
   },
   { 
     id: 21, 
-    name: "Mark", 
+    name: "Dhanashree", 
     group: "Work Chums", 
-    avatar: "business man", 
-    wish: "Happy birthday! From coffee breaks to project deadlines - you're an awesome teammate! 🎊",
+    avatar: "business woman", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "During that crazy deadline last month when we were all stressed, and you kept everyone's spirits up with your humor and calm energy.",
-      personalityEmojis: "😎⚡🎯💼🤝",
-      hiddenTrait: "You're a natural stress-buster. Even when you're stressed yourself, you somehow manage to keep everyone else calm and focused.",
-      warningLabel: "Productivity Warning: May make deadlines seem less scary, will crack jokes during tense meetings, and somehow gets things done while having fun.",
-      neverChange: "Your ability to stay cool under pressure and your talent for making high-stress situations feel manageable.",
-      futureAdvice: "Trust your instincts about people and projects. Your judgment is usually spot-on, even when you doubt yourself.",
-      birthdayWish: "Hope your birthday is stress-free and full of the same positive energy you bring to our team every day! 🎊💼"
+      importantMoment: "Our bond grew so strong, and we began to share so many wonderful memories, that I can't quite pinpoint the moment you became such an important part of my life.",
+      personalityEmojis: "🙂‍↔️🫣🤨💓🧐",
+      hiddenTrait: "You always find good in people and has a way of truly understanding them.",
+      warningLabel: ".",
+      neverChange: "Sanju stay as you are !! ",
+      futureAdvice: ".",
+      birthdayWish: "I wish you get all the things you've ever wished to have."
     },
-    contact: { type: "email" as const, value: "mark@company.com" } 
+    contact: { type: "email" as const, value: "dhanashreethakare13@gmail.com" } 
   },
   { 
     id: 22, 
-    name: "Coffee Club Crew", 
+    name: "Omkar", 
     group: "Work Chums", 
-    avatar: "office group", 
-    wish: "Happy birthday from your coffee club crew! Thanks for always bringing the best treats. We appreciate you! ☕",
+    avatar: "/omkar-wishcard.jpeg", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When you started bringing homemade cookies to our coffee breaks. That's when we realized you're not just a colleague - you're someone who cares about making people happy.",
-      personalityEmojis: "☕🍪💕👥🌞",
-      hiddenTrait: "You have this amazing ability to create community wherever you go. You turn coworkers into friends without even trying.",
-      warningLabel: "Social Alert: Will remember everyone's coffee preferences, may organize surprise celebrations, and somehow knows exactly what treats people like.",
-      neverChange: "Your thoughtfulness and the way you make everyone feel included. You're the heart of our little work family.",
-      futureAdvice: "Never underestimate the power of small kindnesses! You make people's days better, and that's incredibly valuable.",
-      birthdayWish: "May your special day be as sweet as all the treats you bring us, and may your kindness come back to you in wonderful ways! ☕🎂"
+      importantMoment: "1st June,2024 was the day when we actually got to bond really well on our trip to Bhandardara with our other ‘Chums’ and then it was confirmed as a lifetime friendship. Before that I was actually scared of her rebellious behaviour thinking that hum log kbhi friends nhi bn payenge but LOL…….Here we are! Now I am a part of her ‘Fav Ppl at Work’ List and it makes me happy to have a friend like her who is no-filter just like me ",
+      personalityEmojis: "💪🏻(Fitness Freak)🍗(Loves Chicken)🤨( Always ready to jump into fights)🤓(Chasmish)😤 (Rebellious) 👶(loves babies)",
+      hiddenTrait: "Well planned hota uska sb kuch…I believe aisa kuch nhi hoga jo she doesn’t realise about herself",
+      warningLabel: "Gussa thoda kam kro saasu Ji",
+      neverChange: "That she’s so empathetic and kind towards everyone ",
+      futureAdvice: "Sanju, life mein jo bhi ho, jyada stress na liya kr",
+      birthdayWish: "You are deserving of all the love, wealth and success in the world and I affirm you have it all."
     },
-    contact: { type: "email" as const, value: "coffeeclub@company.com" } 
+    contact: { type: "whatsapp" as const, value: "+917744838610" } 
   },
   { 
     id: 23, 
@@ -409,7 +375,7 @@ const friendsData = [
   },
   { 
     id: 24, 
-    name: "Ahmed", 
+    name: "Ahm", 
     group: "Work Chums", 
     avatar: "middle eastern man", 
     wish: "Happy birthday! Thanks for always being there to help solve the trickiest problems. You're a lifesaver! 🚀",
@@ -445,69 +411,69 @@ const friendsData = [
   // Study Buddies (5 people)
   { 
     id: 26, 
-    name: "Emma", 
+    name: "Shristi", 
     group: "Study Buddies", 
-    avatar: "/sample_image_wisher1.png", 
-    wish: "Happy birthday bestie! College wouldn't have been the same without you. Here's to our lifelong friendship! 🥳",
+    avatar: "/shristi-wishcard.JPG", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "It was during our first finals week when you stayed up all night helping me study for chemistry. That's when I knew you were more than just a study partner - you were a true friend.",
-      personalityEmojis: "😂🌟💪🤗🎨",
-      hiddenTrait: "You have this incredible ability to make everyone feel heard and valued, even when you're going through your own challenges.",
-      warningLabel: "Warning: May cause excessive laughter, sudden urges to be more productive, and uncontrollable feelings of happiness.",
-      neverChange: "Your genuine curiosity about everyone's stories and your way of celebrating the smallest victories.",
-      futureAdvice: "Trust your instincts more - they've never led you wrong. And remember, it's okay to take up space in the world.",
-      birthdayWish: "I hope this new year brings you all the adventures you've been dreaming about and the confidence to chase every single one of them. Happy birthday, bestie! 🎂✨"
+      importantMoment: "Remember when we reconnected and started going on long walks together in village? And strawberry juices we shared? 😊🤩",
+      personalityEmojis: "🤓🏏👯💪🧚‍♀️👩‍🍳🦸‍♀️",
+      hiddenTrait: "She is an incredibly kind-hearted person who used to prioritise others' feelings above her own, but this has changed over time, and I'm happy it worked out well.",
+      warningLabel: "25 year Side Effects: Increased Daydreaming About Wedding Dresses, Babies, and Future Homes 🏠💕🤣🙈",
+      neverChange: "Her kindness, maturity and prioritizing her happiness",
+      futureAdvice: "Get married to this amazing guy, can't wait to dance on your wedding day, though you didn't dance on mine 😤😕 Keep that passion alive! open a cafe – I'll invest, you bring the passion ☕️💡",
+      birthdayWish: "Have a happy and peaceful life with good health "
     },
-    contact: { type: "whatsapp" as const, value: "+919876543221" }
+    contact: { type: "whatsapp" as const, value: "+919619698612" }
   },
   { 
     id: 27, 
-    name: "Jake", 
+    name: "Calvin", 
     group: "Study Buddies", 
-    avatar: "/sample_image_wisher1.png", 
-    wish: "Happy birthday! Those late-night study sessions and pizza runs were legendary. Hope your day is as awesome as you are! 🍕",
+    avatar: "/calvin-wishcard.jpg", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When I was stressed about failing calculus and you convinced me to talk to the professor with you. Your support gave me the courage I needed.",
-      personalityEmojis: "🍕🎮📚😎🚀",
-      hiddenTrait: "You're braver than you think you are. You always push yourself and others to do things that seem scary but end up being worth it.",
-      warningLabel: "Study Alert: Will turn any study session into a pizza party, may challenge you to late-night gaming sessions, and somehow makes even calculus fun.",
-      neverChange: "Your loyalty and the way you make everything an adventure. Even studying with you felt like we were on some epic quest.",
-      futureAdvice: "Keep taking those calculated risks! Some of your 'crazy' ideas have been the best ones. Trust your adventurous spirit.",
-      birthdayWish: "Hope your birthday is as epic as those legendary all-nighters we pulled! May this year be your best adventure yet! 🍕🚀"
+      importantMoment: "A person with the most amazing skill of 'getting shit done'. Man it is so hard to keep up with your life, but you always stay on top of it. I asked for your notes once because I had missed class, the level of detail in those notes was the moment that I realized you are very important 🤣🤣.. Not just academically, you surprise me every time with how much effort you can put into things. Whether it be a class presentation or packing your multiple layer tiffin or packing cup noodles for a Rajkot Trip or dressing up a saree and looking absolutely gorgeous at Magathane metro station... you never settled for sub par.",
+      personalityEmojis: "😻🍜🍗👩‍🍳💪",
+      hiddenTrait: "You are stronger than you think you are...(Not physical strength)",
+      warningLabel: "Hangry warning",
+      neverChange: "her smile",
+      futureAdvice: "There's long way to go....You are doing just fine. Be Patient, goods things are on the way",
+      birthdayWish: "I wish the best for you, and i pray that you never get stuck up in life."
     },
-    contact: { type: "email" as const, value: "jake@college.edu" } 
+    contact: { type: "whatsapp" as const, value: "+919820410740" } 
   },
   { 
     id: 28, 
-    name: "Mia", 
+    name: "Aditi", 
     group: "Study Buddies", 
-    avatar: "student with glasses", 
-    wish: "Happy birthday gorgeous! From dorm room dance parties to graduation - what a journey! Love you tons! 💃",
+    avatar: "/aditi-wishcard.jpeg", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When I was crying over that breakup sophomore year and you showed up with ice cream and turned it into an impromptu dance party. You saved my whole semester!",
-      personalityEmojis: "💃🌈✨🎭🍦",
-      hiddenTrait: "You have this magical ability to turn any bad situation into something fun and memorable. You're like sunshine in human form.",
-      warningLabel: "Fun Alert: May spontaneously break into dance, will turn your room into a party venue, and somehow makes even finals week feel celebratory.",
-      neverChange: "Your infectious energy and the way you can make anyone laugh, even when they want to cry. You're pure joy.",
-      futureAdvice: "Never let anyone tell you to tone down your enthusiasm! The world needs more people who love life as much as you do.",
-      birthdayWish: "May your birthday be one giant dance party and may this year bring you countless reasons to celebrate! 💃🎂"
+      importantMoment: "When we were attending ‘online’ lectures during Covid and that fact that we used to just communicate by giving each other looks, I, in that exact moment knew Sanju is someone I want to run to for everything! ",
+      personalityEmojis: "❤️🤑🧚🏼‍♀️🫶🏻👩‍🍳",
+      hiddenTrait: "Sanju doesn’t realise how she is a sister-like-figure to me and how every little thing she does means so much to me on days when I miss home too much! ",
+      warningLabel: "Highly contagious giggles",
+      neverChange: "Her heart, gold.",
+      futureAdvice: "Good things take time.",
+      birthdayWish: "..endless joy, a love that feels like home, and success in everything she dreams of. Happy birthday, meri pyaari sanjuu ❤️ It is true when people say that you always find the best people when you expect them the least and finding you was one such instance. Thankyou for always always being my rock, scolding me when it was needed, caring for me, making me laugh, feeding us with all the yummy food, teaching us all the crazy subjects, hosting us so lovingly always, for always going that extra mile for us and for all the little things you do for me! Bombay and so many other things wouldn't have been possible without you! You'll always be the first online friend I talked and gossiped to in XIMR and I'm so glad we could continue that offline too. I have had the best memories with you and I hope to make so many more. You're the bessst. Here's to more gossip sessions and overeating. Just know that you'll always have me right next to youu and I've always got your back, no matter what 🦋 I love you so muchhh ❤️🧿"
     },
-    contact: { type: "whatsapp" as const, value: "+919876543222" } 
+    contact: { type: "whatsapp" as const, value: "+918237699206" } 
   },
   { 
     id: 29, 
-    name: "Alex", 
+    name: "Nikita", 
     group: "Study Buddies", 
-    avatar: "young man casual", 
-    wish: "Happy birthday! Thanks for being such an amazing friend through all the ups and downs of college life! 🎓",
+    avatar: "young woman casual", 
+    wish: "Happy birthday",
     responses: {
-      importantMoment: "When I was questioning everything about my major and my future, and you listened to me vent for hours without trying to fix everything. Sometimes people just need to be heard.",
-      personalityEmojis: "🎓💭🤝🎯📖",
-      hiddenTrait: "You're incredibly wise for your age. You see things clearly and give advice that actually helps, but you don't realize how much people value your perspective.",
-      warningLabel: "Wisdom Alert: May offer profound insights during casual conversations, will remember important details about your life, and gives advice that actually works.",
-      neverChange: "Your thoughtfulness and the way you really listen when people talk. You make people feel understood in a world where everyone's just waiting for their turn to speak.",
-      futureAdvice: "Don't underestimate your ability to help people figure things out. You have a gift for seeing situations clearly.",
-      birthdayWish: "Hope this year brings you the clarity and success you've helped so many of us find. You deserve amazing things! 🎓✨"
+      importantMoment: "I think when we spent more time in group projects is when i realized how wonderful you are Sanju🥰",
+      personalityEmojis: "🥰🤭😇❤️😈",
+      hiddenTrait: "She is super strong and her dedication to any task is truly admirable!",
+      warningLabel: "Her looks can kill",
+      neverChange: "Her personality",
+      futureAdvice: "Keep being herself and never change. She is perfect just the way she is",
+      birthdayWish: "Happiest 25th Birthday Sanju, may all your dreams and aspirations come true❤️"
     },
     contact: { type: "email" as const, value: "alex@college.edu" } 
   },

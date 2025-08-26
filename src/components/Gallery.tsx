@@ -10,43 +10,73 @@ const galleryData = {
   photos: [
     {
       id: 'photo-1',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Beautiful Moment 1'
+      src: '/gallery-image-1.jpeg',
+      title: 'Chichi!'
     },
     {
       id: 'photo-2', 
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Birthday Celebration'
+      src: '/gallery-image-2.jpeg',
+      title: 'One with Hri'
     },
     {
       id: 'photo-3',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Sweet Memories'
+      src: '/gallery-image-3.jpeg',
+      title: 'One with Isha'
     },
     {
       id: 'photo-4',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Happy Times'
+      src: '/gallery-image-4.jpeg',
+      title: 'Baby Ranveer'
     },
     {
       id: 'photo-5',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Joyful Celebration'
+      src: '/gallery-image-5.jpeg',
+      title: 'One with Shourya'
     },
     {
       id: 'photo-6',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Precious Moments'
+      src: '/gallery-image-6.jpeg',
+      title: 'One with Aditi'
     },
     {
       id: 'photo-7',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Cherished Memory'
+      src: '/gallery-image-7.jpeg',
+      title: 'Chhota Don'
     },
     {
       id: 'photo-8',
-      src: 'https://images.unsplash.com/photo-1580757468214-c73f7062a5cb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Beautiful Day'
+      src: '/gallery-image-8.jpg',
+      title: 'Culinary exploration with Shristi'
+    },
+    {
+      id: 'photo-9',
+      src: '/gallery-image-9.jpg',
+      title: 'One with Cal'
+    },
+    {
+      id: 'photo-10',
+      src: '/gallery-image-10.jpeg',
+      title: 'One with Prarthana'
+    },
+    {
+      id: 'photo-11',
+      src: '/gallery-image-11.jpg',
+      title: 'One with Saptak'
+    },
+    {
+      id: 'photo-12',
+      src: '/gallery-image-12.jpg',
+      title: 'One with Laya'
+    },
+    {
+      id: 'photo-13',
+      src: '/gallery-image-13.jpeg',
+      title: 'Work Chums'
+    },
+    {
+      id: 'photo-14',
+      src: '/gallery-image-14.jpg',
+      title: 'One with Dhanashree'
     }
   ]
 };
