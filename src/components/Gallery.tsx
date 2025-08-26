@@ -49,6 +49,11 @@ const galleryData = {
       title: 'Culinary exploration with Shristi'
     },
     {
+      id: 'photo-22',
+      src: '/gallery-image-22.jpg',
+      title: 'One in the museum'
+    },
+    {
       id: 'photo-9',
       src: '/gallery-image-9.jpg',
       title: 'One with Cal'
@@ -69,6 +74,11 @@ const galleryData = {
       title: 'One with Laya'
     },
     {
+      id: 'photo-18',
+      src: '/gallery-image-18.jpg',
+      title: 'Rare moments of happiness at work'
+    },
+    {
       id: 'photo-13',
       src: '/gallery-image-13.jpeg',
       title: 'Work Chums'
@@ -77,6 +87,46 @@ const galleryData = {
       id: 'photo-14',
       src: '/gallery-image-14.jpg',
       title: 'One with Dhanashree'
+    },
+    {
+      id: 'photo-15',
+      src: '/gallery-image-15.jpeg',
+      title: 'One with Khooshi'
+    },
+    {
+      id: 'photo-16',
+      src: '/gallery-image-16.jpg',
+      title: 'One with Preeti'
+    },
+    {
+      id: 'photo-17',
+      src: '/gallery-image-17.jpg',
+      title: 'Sunshine in Sunshine'
+    },
+    {
+      id: 'photo-19',
+      src: '/gallery-image-19.jpg',
+      title: 'Fan-girling!'
+    },
+    {
+      id: 'photo-20',
+      src: '/gallery-image-20.jpg',
+      title: 'La Famille'
+    },
+    {
+      id: 'photo-21',
+      src: '/gallery-image-21.jpg',
+      title: 'Rad Grads'
+    },
+    {
+      id: 'photo-23',
+      src: '/gallery-image-23.jpg',
+      title: 'Celeb who?'
+    },
+    {
+      id: 'photo-24',
+      src: '/gallery-image-24.jpg',
+      title: 'Adventures of Pingu & Pungu🐧🐧'
     }
   ]
 };
@@ -149,7 +199,7 @@ export function Gallery() {
               Memory Lane
             </h2>
             <p className="text-muted-foreground mb-6">
-              Beautiful moments captured throughout the years - Click photos to view in full size
+              Beautiful moments captured with the ones that matter - Click photos to view in full size
             </p>
           </motion.div>
 
