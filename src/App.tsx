@@ -9,24 +9,6 @@ import './styles/globals.css'
 
 // Mock data for friends and family - Updated with contact info and detailed responses
 const friendsData = [
-  // Fam Jam (3 people)
-  { 
-    id: 1, 
-    name: "Jaden", 
-    group: "Fam Jam", 
-    avatar: "man portrait", 
-    wish: "Happy birthday!",
-    responses: {
-      importantMoment: "The day you were born, of course! But truly, it was watching you help that lost child find their parents at the mall when you were just 8. That's when I knew you had the kindest heart.",
-      personalityEmojis: "🌟💕🤗🎨✨",
-      hiddenTrait: "You don't realize how much your quiet acts of kindness inspire everyone around you. You think you're just being normal, but you're extraordinary.",
-      warningLabel: "Warning: Will make you laugh until your stomach hurts, may cause spontaneous hugs, and will always have snacks ready.",
-      neverChange: "Your ability to see the good in everyone and your way of making everyone feel like they belong in our family.",
-      futureAdvice: "Always trust your heart, beta. It has never led you wrong. And remember, home is always here when you need it.",
-      birthdayWish: "I wish for you a lifetime filled with as much joy as you've brought to my life. May you always know how deeply loved you are. Happy birthday, my precious daughter! 💖"
-    },
-    contact: { type: "whatsapp" as const, value: "+919876543210" } 
-  },
   
   // Langotiyas (3 people)
   { 
@@ -120,7 +102,7 @@ const friendsData = [
     id: 7, 
     name: "Ashish", 
     group: "Nathkhat Neighborhood", 
-    avatar: "Ranveer's Papa", 
+    avatar: "/gallery-image-4.jpeg", 
     wish: "Happy birthday",
     responses: {
       importantMoment: "She’s really fond of my son Ranveer and the moment she saw her for the first time she started crying and couldn’t stop it. I cant forget that moment. Lovely she is ❤️",
@@ -190,7 +172,7 @@ const friendsData = [
     id: 19, 
     name: "Shourya", 
     group: "Work Chums", 
-    avatar: "coworker man", 
+    avatar: "/gallery-image-5.jpeg", 
     wish: "Happy birthday",
     responses: {
       importantMoment: "Obviously it all Started coz of Suminter where each of my friends told me that be with Sanju she’s the most amazing person u ll meet… and yes suminter made me realise that how fun,jhalli,caring and adorable person you are",
@@ -224,7 +206,7 @@ const friendsData = [
     id: 21, 
     name: "Dhanashree", 
     group: "Work Chums", 
-    avatar: "business woman", 
+    avatar: "/gallery-image-14.jpg", 
     wish: "Happy birthday",
     responses: {
       importantMoment: "Our bond grew so strong, and we began to share so many wonderful memories, that I can't quite pinpoint the moment you became such an important part of my life.",
@@ -258,7 +240,7 @@ const friendsData = [
     id: 23, 
     name: "Idris", 
     group: "Work Chums", 
-    avatar: "professional woman 2", 
+    avatar: "idris-wishcard.jpeg", 
     wish: "Happy birthday",
     responses: {
       importantMoment: ".",
@@ -357,6 +339,42 @@ const friendsData = [
       birthdayWish: "Happiest 25th Birthday Sanju, may all your dreams and aspirations come true❤️"
     },
     contact: { type: "whatsapp" as const, value: "+919820256959" } 
+  },
+{ 
+    id: 30, 
+    name: "Stacie", 
+    group: "Study Buddies", 
+    avatar: "/gallery-image-21.jpg", 
+    wish: "Happy birthday",
+    responses: {
+      importantMoment: "This was the moment I realized you were going to be an important person in my life — when you made sure I wasn’t left out even though I wasn’t really part of the group. The way you included me so effortlessly and made me feel like I belonged is something I’ll never forget. That little act of kindness became a core memory for me, and from then on I knew you was someone truly special. Even though we don’t always get to see each other physically, you’ve always been there for me — and that means the world.",
+      personalityEmojis: "😎🌭🫶🏻🏕️🧥",
+      hiddenTrait: "You are inspiring!",
+      warningLabel: "Get married sooon",
+      neverChange: "One thing I never want you to change is the way you make everyone feel included. No matter who it is, you always make sure nobody feels left out—and that kindness is what makes you truly special",
+      futureAdvice: "My only advice for your future—please start that food business soon, because the world deserves your cooking… and also so I can eat for free! And if you need a partner, you know I am in from day One!",
+      birthdayWish: "Happy Birthday, my love! 🎉✨ Wishing you the best future filled with happiness, success, and endless blessings. You’ve already found your perfect partner, and I hope together you build the most beautiful life, full of love, laughter, and unforgettable memories. 💖"
+    },
+    contact: { type: "whatsapp" as const, value: "+919082320802" } 
+  },
+
+  // Fam Jam (3 people)
+  { 
+    id: 100, 
+    name: "Adwait", 
+    group: "Fam Jam", 
+    avatar: "adwait-wishcard.jpeg", 
+    wish: "Happy birthday!",
+    responses: {
+      importantMoment: "You know someone is dearly important when you feel within yourself a sense of content, limitless fulfillment and a feeling of being whole. This is what you evoked in me when the universe blessed me with your presence. The purity of your heart etched in me an unforgettable moment, a contract of ages, set in stone. A certain café that housed us that evening, witnessed your acknowledgement, a nimble nod of commitment, and a humble acceptance of the looming inevitable. I knew again how important you were to me in that instance, a moment of courage that birthed the love we embrace today. To witness selflessness, up and close in every action, big or small, can be an elevating experience and I wish to keep at it, with you!",
+      personalityEmojis: "♥️😎🍟🍗👸🏻💤💃🏻🥹✨🧠😂🧿💖🌸",
+      hiddenTrait: "You are a source of inspiration for many, fueled from the immense potential you possess. The possibilities are endless when you realize what you are truly capable of 💪",
+      warningLabel: "⚠️Danger⚠️: Excessive exposure to killer sense of humor 💣 and unparalleled angelic beauty ✨",
+      neverChange: "The honesty and originality of your psyche. Continue being a beacon of purist thinking and staying true to yourself.",
+      futureAdvice: "Belief in yourself as you do in the ones that matter to you. Grab every opportunity that presents itself to you after creating many more. Prototype that plan, make that move that moves you back.",
+      birthdayWish: "Wishing you an extremely happy birthday and beyond! You have made an entire quarter of a century a pleasant experience and granted a sense of belonging and purpose to many around you. May the universe guide you and protect you as you continue to celebrate life and live your dreams 🌸 I wish you all the love and prosperity on this 25th birthday, and wish to celebrate with you, all the others yet to come!!"
+    },
+    contact: { type: "whatsapp" as const, value: "+919004682363" } 
   }
 ];
 

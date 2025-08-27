@@ -80,7 +80,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
 
   const currentFriend = friends[currentIndex];
   const progressPercentage = ((currentIndex + 1) / friends.length) * 100;
-
+  const groupOrder = ['Langotiyas', 'Nathkhat Neighborhood', 'Work Chums', 'Study Buddies', 'Fam Jam'];
   return (
     <div className="px-4 mb-12">
       <div className="max-w-2xl mx-auto">
@@ -260,7 +260,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
             </span>
           </div>
         </motion.div>
-
+        
         {/* Quick Jump Navigation */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -268,7 +268,12 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
           transition={{ delay: 1 }}
           className="flex justify-center mt-4 gap-2 flex-wrap"
         >
-          {Object.entries(groupColors).map(([group, colorClass], groupIndex) => {
+          {Object.entries(groupColors)
+          .sort(([a], [b]) => {
+            const aIndex = groupOrder.indexOf(a);
+            const bIndex = groupOrder.indexOf(b);
+            return aIndex - bIndex;
+          }).map(([group, colorClass], groupIndex) => {
             const groupFriends = friends.filter(f => f.group === group);
             const firstFriendIndex = friends.findIndex(f => f.group === group);
             
