@@ -80,7 +80,7 @@ export function FriendsCarousel({ friends, groupColors, onFriendSelect, selected
 
   const currentFriend = friends[currentIndex];
   const progressPercentage = ((currentIndex + 1) / friends.length) * 100;
-  const groupOrder = ['Langotiyas', 'Nathkhat Neighborhood', 'Work Chums', 'Study Buddies', 'Fam Jam'];
+  const groupOrder = ['Langotiyas', 'Nathkhat Neighborhood', 'Work Chums', 'Study Buddies'];
   return (
     <div className="px-4 mb-12">
       <div className="max-w-2xl mx-auto">

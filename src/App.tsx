@@ -74,7 +74,7 @@ const friendsData = [
       importantMoment: "Sanjana was never Sanjana to me she was always my chiichii. To manny memories and laughter together. More like an elder sister and cricket buddies forever. There was never a particular moment when I realised that she is an important person in my life, I just knew that no matter what I’ll always have my chichi since childhood. ",
       personalityEmojis: "🤓🍗🍔🍕🥟❤️😂",
       hiddenTrait: "sab pata hai chichi ko kuch realize kar ne ki zarurat nahi hai🤣🤭",
-      warningLabel: "Bas aab bhaiyaa ko Paris se wapis aane do sab bata dungi apni masti 😁😁",
+      warningLabel: "masti karne mein number one 😁😁",
       neverChange: "I hope that you never change you laugher and mast mast hugs when you see me 😋",
       futureAdvice: "shaadi karo yarr basss or kuch nahi cahiyeh  🙏🏻🙏🏻 mujhe bhi future sangeet practice ki tension hai 😭😭",
       birthdayWish: "Happiest Birthday Chiichii ❤️ Love you sab se zada and ek chummi bhi meri taraf se, keep smiling and have a wonderful year ahead. You will always have me no matter what. ❤️🎁🎈💋🥳🎊"
@@ -100,6 +100,23 @@ const friendsData = [
   },
   { 
     id: 7, 
+    name: "Adwait", 
+    group: "Nathkhat Neighborhood", 
+    avatar: "gallery-image-12.jpg", 
+    wish: "Happy birthday!",
+    responses: {
+      importantMoment: "I have not seen or known anyone with the poise and grace that you possess. An absolute personality and a heart of gold, one that lifts everyone around. This is what I felt when I first met you at one of our cricket tournaments. I am glad to have met you and share this bond with you! ",
+      personalityEmojis: "♥️😎🍟🍗👸🏻💤💃🏻🥹✨🧠😂🧿💖🌸",
+      hiddenTrait: "You are a source of inspiration for many, fueled from the immense potential you possess. The possibilities are endless when you realize what you are truly capable of 💪",
+      warningLabel: "⚠️Danger⚠️: Excessive exposure to killer sense of humor 💣 and unparalleled aesthetic beauty ✨",
+      neverChange: "The honesty and originality of your psyche. Continue being a beacon of purist thinking and staying true to yourself.",
+      futureAdvice: "Belief in yourself as you do in the ones that matter to you. Grab every opportunity that presents itself to you after creating many more. Prototype that plan, make that move that moves you back.",
+      birthdayWish: "Wishing you an extremely happy birthday and beyond! You have made an entire quarter of a century a pleasant experience and granted a sense of belonging and purpose to many around you. May the universe guide you and protect you as you continue to celebrate life and live your dreams 🌸 I wish you all the love and prosperity on this 25th birthday!"
+    },
+    contact: { type: "whatsapp" as const, value: "+919004682363" } 
+  },
+  { 
+    id: 8, 
     name: "Ashish", 
     group: "Nathkhat Neighborhood", 
     avatar: "/gallery-image-4.jpeg", 
@@ -116,7 +133,7 @@ const friendsData = [
     contact: { type: "whatsapp" as const, value: "+918108781616" } 
   },
   { 
-    id: 8, 
+    id: 9, 
     name: "Adway", 
     group: "Nathkhat Neighborhood", 
     avatar: "/adway-wishcard.jpg", 
@@ -133,7 +150,7 @@ const friendsData = [
     contact: { type: "whatsapp" as const, value: "+919137944854" } 
   },
   { 
-    id: 9, 
+    id: 10, 
     name: "Khooshi", 
     group: "Nathkhat Neighborhood", 
     avatar: "/khooshi-wishcard.jpeg", 
@@ -284,7 +301,7 @@ const friendsData = [
       hiddenTrait: "She is an incredibly kind-hearted person who used to prioritise others' feelings above her own, but this has changed over time, and I'm happy it worked out well.",
       warningLabel: "25 year Side Effects: Increased Daydreaming About Wedding Dresses, Babies, and Future Homes 🏠💕🤣🙈",
       neverChange: "Her kindness, maturity and prioritizing her happiness",
-      futureAdvice: "Get married to this amazing guy, can't wait to dance on your wedding day, though you didn't dance on mine 😤😕 Keep that passion alive! open a cafe – I'll invest, you bring the passion ☕️💡",
+      futureAdvice: "Can't wait to dance on your wedding day, though you didn't dance on mine 😤😕 Keep that passion alive! open a cafe – I'll invest, you bring the passion ☕️💡",
       birthdayWish: "Have a happy and peaceful life with good health "
     },
     contact: { type: "whatsapp" as const, value: "+919619698612" }
@@ -353,33 +370,14 @@ const friendsData = [
       warningLabel: "Get married sooon",
       neverChange: "One thing I never want you to change is the way you make everyone feel included. No matter who it is, you always make sure nobody feels left out—and that kindness is what makes you truly special",
       futureAdvice: "My only advice for your future—please start that food business soon, because the world deserves your cooking… and also so I can eat for free! And if you need a partner, you know I am in from day One!",
-      birthdayWish: "Happy Birthday, my love! 🎉✨ Wishing you the best future filled with happiness, success, and endless blessings. You’ve already found your perfect partner, and I hope together you build the most beautiful life, full of love, laughter, and unforgettable memories. 💖"
+      birthdayWish: "Happy Birthday, my love! 🎉✨ Wishing you the best future filled with happiness, success, and endless blessings. I hope for you to build the most beautiful life, full of love, laughter, and unforgettable memories. 💖"
     },
     contact: { type: "whatsapp" as const, value: "+919082320802" } 
-  },
-
-  // Fam Jam (3 people)
-  { 
-    id: 100, 
-    name: "Adwait", 
-    group: "Fam Jam", 
-    avatar: "adwait-wishcard.jpeg", 
-    wish: "Happy birthday!",
-    responses: {
-      importantMoment: "You know someone is dearly important when you feel within yourself a sense of content, limitless fulfillment and a feeling of being whole. This is what you evoked in me when the universe blessed me with your presence. The purity of your heart etched in me an unforgettable moment, a contract of ages, set in stone. A certain café that housed us that evening, witnessed your acknowledgement, a nimble nod of commitment, and a humble acceptance of the looming inevitable. I knew again how important you were to me in that instance, a moment of courage that birthed the love we embrace today. To witness selflessness, up and close in every action, big or small, can be an elevating experience and I wish to keep at it, with you!",
-      personalityEmojis: "♥️😎🍟🍗👸🏻💤💃🏻🥹✨🧠😂🧿💖🌸",
-      hiddenTrait: "You are a source of inspiration for many, fueled from the immense potential you possess. The possibilities are endless when you realize what you are truly capable of 💪",
-      warningLabel: "⚠️Danger⚠️: Excessive exposure to killer sense of humor 💣 and unparalleled angelic beauty ✨",
-      neverChange: "The honesty and originality of your psyche. Continue being a beacon of purist thinking and staying true to yourself.",
-      futureAdvice: "Belief in yourself as you do in the ones that matter to you. Grab every opportunity that presents itself to you after creating many more. Prototype that plan, make that move that moves you back.",
-      birthdayWish: "Wishing you an extremely happy birthday and beyond! You have made an entire quarter of a century a pleasant experience and granted a sense of belonging and purpose to many around you. May the universe guide you and protect you as you continue to celebrate life and live your dreams 🌸 I wish you all the love and prosperity on this 25th birthday, and wish to celebrate with you, all the others yet to come!!"
-    },
-    contact: { type: "whatsapp" as const, value: "+919004682363" } 
   }
 ];
 
 const groupColors = {
-  "Fam Jam": "bg-gradient-to-br from-rose-50 via-pink-50 to-violet-100 border-rose-200/60 shadow-rose-100/50",
+  //"Fam Jam": "bg-gradient-to-br from-rose-50 via-pink-50 to-violet-100 border-rose-200/60 shadow-rose-100/50",
   "Langotiyas": "bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 border-sky-200/60 shadow-sky-100/50", 
   "Nathkhat Neighborhood": "bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100 border-emerald-200/60 shadow-emerald-100/50",
   "Work Chums": "bg-gradient-to-br from-amber-50 via-orange-50 to-red-100 border-amber-200/60 shadow-amber-100/50",

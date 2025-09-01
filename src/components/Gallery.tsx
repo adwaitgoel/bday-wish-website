@@ -71,7 +71,7 @@ const galleryData = {
     {
       id: 'photo-12',
       src: '/gallery-image-12.jpg',
-      title: 'One with Laya'
+      title: 'Christmas Chronicles'
     },
     {
       id: 'photo-18',
@@ -101,7 +101,7 @@ const galleryData = {
     {
       id: 'photo-17',
       src: '/gallery-image-17.jpg',
-      title: 'Sunshine in Sunshine'
+      title: 'Globe Trotter'
     },
     {
       id: 'photo-19',
@@ -122,11 +122,6 @@ const galleryData = {
       id: 'photo-23',
       src: '/gallery-image-23.jpg',
       title: 'Celeb who?'
-    },
-    {
-      id: 'photo-24',
-      src: '/gallery-image-24.jpg',
-      title: 'Adventures of Pingu & Pungu🐧🐧'
     }
   ]
 };
