@@ -151,6 +151,40 @@ const friendsData = [
   },
   { 
     id: 10, 
+    name: "Shlokie", 
+    group: "Nathkhat Neighborhood", 
+    avatar: "Placeholder", 
+    wish: "Happy birthday",
+    responses: {
+      importantMoment: "Bhaiya introduced me to you and then vibes match Hui aur tum humari bunty ban gaye 😎😂",
+      personalityEmojis: "Chess player, hilarious, funny and top level backchod",
+      hiddenTrait: "Mast hai and foodie number 1 ",
+      warningLabel: "The hilarious one",
+      neverChange: "Same backchodi karo aur life enjoy karo eat loads ❤️🙌",
+      futureAdvice: "Work hard grind with the one and on your goals",
+      birthdayWish: "Enjoy karna , aag laga dena dance floor par ,2 peg yaha aur 2 peg waha ....always keep smiling  and keep strong 🙌"
+    },
+    contact: { type: "whatsapp" as const, value: "+919920379549" } 
+  },
+  { 
+    id: 11, 
+    name: "Minal", 
+    group: "Nathkhat Neighborhood", 
+    avatar: "/minal-wishcard.jpg", 
+    wish: "Happy birthday",
+    responses: {
+      importantMoment: "I can tell she is pure hearted as tears of joy filled her eyes when she saw my baby Ranveer!! She feels  everything very deeply and that makes her truly special!",
+      personalityEmojis: "🥰😇🥹🌸🫰🏻",
+      hiddenTrait: "She can easily open anyone’s heart ! She makes everyone feel loved 🥰 ",
+      warningLabel: "She is adorably cute with a big heart ! ",
+      neverChange: "Kind and Generous nature of hers !",
+      futureAdvice: "Everything will fall into place when the time is right so don’t worry too much! ",
+      birthdayWish: "Wishing you abundance of love, happiness success and health !! May you always shine bright and achieve all that you desire! Happy 25 th birthday 🎂 "
+    },
+    contact: { type: "email" as const, value: "minalmair@gmail.com" } 
+  },
+  { 
+    id: 12, 
     name: "Khooshi", 
     group: "Nathkhat Neighborhood", 
     avatar: "/khooshi-wishcard.jpeg", 

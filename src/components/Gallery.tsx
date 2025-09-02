@@ -122,6 +122,11 @@ const galleryData = {
       id: 'photo-23',
       src: '/gallery-image-23.jpg',
       title: 'Celeb who?'
+    },
+    {
+      id: 'photo-24',
+      src: '/minal-wishcard.jpg',
+      title: 'One with Minal'
     }
   ]
 };
